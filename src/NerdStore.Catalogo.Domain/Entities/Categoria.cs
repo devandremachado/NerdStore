@@ -13,7 +13,8 @@ namespace NerdStore.Catalogo.Domain.Entites
             Validar();
         }
 
-        protected Categoria() { } // EF
+        // E.F
+        protected Categoria() { }
 
         public string Nome { get; private set; }
         public int Codigo { get; private set; }

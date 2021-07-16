@@ -21,6 +21,9 @@ namespace NerdStore.Catalogo.Domain.Entites
             Validar();
         }
 
+        // E.F
+        protected Produto() { }
+
         public Guid CategoriaId { get; private set; }
         public string Nome { get; private set; }
         public string Descricao { get; private set; }
