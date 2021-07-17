@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System;
 
-namespace NerdStore.Core.Messages
+namespace NerdStore.Shared.Messages
 {
     public abstract class Event : Message, INotification
     {

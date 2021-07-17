@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -15,7 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\NerdStore.Catalogo.Domain\NerdStore.Catalogo.Domain.csproj" />
-    <ProjectReference Include="..\..\src\NerdStore.Core\NerdStore.Core.csproj" />
+    <ProjectReference Include="..\..\src\NerdStore.Core\NerdStore.Shared.csproj" />
   </ItemGroup>
 
 </Project>

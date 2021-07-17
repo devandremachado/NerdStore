@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NerdStore.Catalogo.Domain.Entites;
-using NerdStore.Catalogo.Domain.ValueObjects;
-using NerdStore.Core.DomainObjects;
+using NerdStore.Modulo.Catalogo.Domain.Entites;
+using NerdStore.Modulo.Catalogo.Domain.ValueObjects;
+using NerdStore.Shared.DomainObjects;
 using System;
 
-namespace NerdStore.Catalogo.Domain.Tests
+namespace NerdStore.Modulo.Catalogo.Domain.Tests
 {
     [TestClass]
     public class ProdutoTests

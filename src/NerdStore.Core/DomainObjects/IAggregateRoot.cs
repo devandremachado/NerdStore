@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NerdStore.Core.DomainObjects
+namespace NerdStore.Shared.DomainObjects
 {
     public interface IAggregateRoot
     {

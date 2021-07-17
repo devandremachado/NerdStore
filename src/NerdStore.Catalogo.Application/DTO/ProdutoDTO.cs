@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace NerdStore.Catalogo.Application.DTO
+namespace NerdStore.Modulo.Catalogo.Application.DTO
 {
     public class ProdutoDTO
     {
@@ -30,19 +30,19 @@ namespace NerdStore.Catalogo.Application.DTO
         [Required(ErrorMessage = "O Campo {0} é obrigatório")]
         public string Imagem { get; set; }
 
-        [Range(1, int.MinValue, ErrorMessage = "O Campo {0} precisa ter o valor minimo de {1}")]
+        [Range(1, int.MaxValue, ErrorMessage = "O Campo {0} precisa ter o valor minimo de {1}")]
         [Required(ErrorMessage = "O Campo {0} é obrigatório")]
         public int QuantidadeEstoque { get; set; }
 
-        [Range(1, int.MinValue, ErrorMessage = "O Campo {0} precisa ter o valor minimo de {1}")]
+        [Range(1, int.MaxValue, ErrorMessage = "O Campo {0} precisa ter o valor minimo de {1}")]
         [Required(ErrorMessage = "O Campo {0} é obrigatório")]
         public int Altura { get; set; }
 
-        [Range(1, int.MinValue, ErrorMessage = "O Campo {0} precisa ter o valor minimo de {1}")]
+        [Range(1, int.MaxValue, ErrorMessage = "O Campo {0} precisa ter o valor minimo de {1}")]
         [Required(ErrorMessage = "O Campo {0} é obrigatório")]
         public int Largura { get; set; }
 
-        [Range(1, int.MinValue, ErrorMessage = "O Campo {0} precisa ter o valor minimo de {1}")]
+        [Range(1, int.MaxValue, ErrorMessage = "O Campo {0} precisa ter o valor minimo de {1}")]
         [Required(ErrorMessage = "O Campo {0} é obrigatório")]
         public int Profundidade { get; set; }
 

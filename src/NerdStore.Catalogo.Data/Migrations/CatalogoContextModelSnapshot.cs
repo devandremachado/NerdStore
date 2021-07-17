@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using NerdStore.Catalogo.Data.Contexts;
+using NerdStore.Modulo.Catalogo.Data.Contexts;
 
-namespace NerdStore.Catalogo.Data.Migrations
+namespace NerdStore.Modulo.Catalogo.Data.Migrations
 {
     [DbContext(typeof(CatalogoContext))]
     partial class CatalogoContextModelSnapshot : ModelSnapshot
@@ -19,7 +19,7 @@ namespace NerdStore.Catalogo.Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.8")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("NerdStore.Catalogo.Domain.Entites.Categoria", b =>
+            modelBuilder.Entity("NerdStore.Modulo.Catalogo.Domain.Entites.Categoria", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace NerdStore.Catalogo.Data.Migrations
                     b.ToTable("Categorias");
                 });
 
-            modelBuilder.Entity("NerdStore.Catalogo.Domain.Entites.Produto", b =>
+            modelBuilder.Entity("NerdStore.Modulo.Catalogo.Domain.Entites.Produto", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -85,15 +85,15 @@ namespace NerdStore.Catalogo.Data.Migrations
                     b.ToTable("Produtos");
                 });
 
-            modelBuilder.Entity("NerdStore.Catalogo.Domain.Entites.Produto", b =>
+            modelBuilder.Entity("NerdStore.Modulo.Catalogo.Domain.Entites.Produto", b =>
                 {
-                    b.HasOne("NerdStore.Catalogo.Domain.Entites.Categoria", "Categoria")
+                    b.HasOne("NerdStore.Modulo.Catalogo.Domain.Entites.Categoria", "Categoria")
                         .WithMany("Produtos")
                         .HasForeignKey("CategoriaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.OwnsOne("NerdStore.Catalogo.Domain.ValueObjects.DimensaoVO", "Dimensoes", b1 =>
+                    b.OwnsOne("NerdStore.Modulo.Catalogo.Domain.ValueObjects.DimensaoVO", "Dimensoes", b1 =>
                         {
                             b1.Property<Guid>("ProdutoId")
                                 .HasColumnType("uniqueidentifier");
@@ -123,7 +123,7 @@ namespace NerdStore.Catalogo.Data.Migrations
                     b.Navigation("Dimensoes");
                 });
 
-            modelBuilder.Entity("NerdStore.Catalogo.Domain.Entites.Categoria", b =>
+            modelBuilder.Entity("NerdStore.Modulo.Catalogo.Domain.Entites.Categoria", b =>
                 {
                     b.Navigation("Produtos");
                 });

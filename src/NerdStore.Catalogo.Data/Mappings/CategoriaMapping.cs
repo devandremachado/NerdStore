@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NerdStore.Catalogo.Domain;
-using NerdStore.Catalogo.Domain.Entites;
+using NerdStore.Modulo.Catalogo.Domain;
+using NerdStore.Modulo.Catalogo.Domain.Entites;
 
-namespace NerdStore.Catalogo.Data.Mappings
+namespace NerdStore.Modulo.Catalogo.Data.Mappings
 {
     public class CategoriaMapping : IEntityTypeConfiguration<Categoria>
     {

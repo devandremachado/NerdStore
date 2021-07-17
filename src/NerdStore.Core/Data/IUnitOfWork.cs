@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace NerdStore.Core.Data
+namespace NerdStore.Shared.Data
 {
     public interface IUnitOfWork
     {

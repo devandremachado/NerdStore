@@ -1,9 +1,9 @@
 ﻿using MediatR;
-using NerdStore.Catalogo.Domain.Interfaces;
+using NerdStore.Modulo.Catalogo.Domain.Interfaces;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace NerdStore.Catalogo.Domain.Events
+namespace NerdStore.Modulo.Catalogo.Domain.Events
 {
     public class ProdutoEventHandler : INotificationHandler<ProdutoEstoqueBaixoEvent>
     {

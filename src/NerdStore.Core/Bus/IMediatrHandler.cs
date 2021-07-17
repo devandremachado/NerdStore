@@ -1,7 +1,7 @@
-﻿using NerdStore.Core.Messages;
+﻿using NerdStore.Shared.Messages;
 using System.Threading.Tasks;
 
-namespace NerdStore.Core.Bus
+namespace NerdStore.Shared.Bus
 {
     public interface IMediatrHandler
     {

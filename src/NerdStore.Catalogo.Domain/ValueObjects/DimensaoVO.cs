@@ -1,6 +1,6 @@
-﻿using NerdStore.Core.DomainObjects;
+﻿using NerdStore.Shared.DomainObjects;
 
-namespace NerdStore.Catalogo.Domain.ValueObjects
+namespace NerdStore.Modulo.Catalogo.Domain.ValueObjects
 {
     public class DimensaoVO
     {

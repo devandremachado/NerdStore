@@ -1,7 +1,7 @@
-﻿using NerdStore.Core.DomainObjects;
+﻿using NerdStore.Shared.DomainObjects;
 using System;
 
-namespace NerdStore.Catalogo.Domain.Events
+namespace NerdStore.Modulo.Catalogo.Domain.Events
 {
     public class ProdutoEstoqueBaixoEvent : DomainEvent
     {

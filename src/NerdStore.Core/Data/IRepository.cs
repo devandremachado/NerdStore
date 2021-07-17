@@ -1,7 +1,7 @@
-﻿using NerdStore.Core.DomainObjects;
+﻿using NerdStore.Shared.DomainObjects;
 using System;
 
-namespace NerdStore.Core.Data
+namespace NerdStore.Shared.Data
 {
     public interface IRepository<T> : IDisposable where T : IAggregateRoot
     {
