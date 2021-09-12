@@ -8,9 +8,9 @@ namespace NerdStore.MVC.Controllers
     public class VitrineController : Controller
     {
 
-        private readonly IProdutoService _produtoService;
+        private readonly IProdutoAppService _produtoService;
 
-        public VitrineController(IProdutoService produtoService)
+        public VitrineController(IProdutoAppService produtoService)
         {
             _produtoService = produtoService;
         }

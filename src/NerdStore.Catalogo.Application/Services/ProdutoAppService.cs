@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace NerdStore.Modulo.Catalogo.Application.Services
 {
-    public class ProdutoService : IProdutoService
+    public class ProdutoAppService : IProdutoAppService
     {
         private readonly IEstoqueService _estoqueService;
         private readonly IProdutoRepository _produtoRepository;
         private readonly IMapper _mapper;
 
-        public ProdutoService(IEstoqueService estoqueService, IProdutoRepository produtoRepository, IMapper mapper)
+        public ProdutoAppService(IEstoqueService estoqueService, IProdutoRepository produtoRepository, IMapper mapper)
         {
             _estoqueService = estoqueService;
             _produtoRepository = produtoRepository;

@@ -12,6 +12,7 @@ using NerdStore.Modulo.Catalogo.Application.AutoMapper;
 using NerdStore.Modulo.Catalogo.Data.Contexts;
 using NerdStore.MVC.Data;
 using NerdStore.MVC.Setup;
+using NerdStore.Vendas.Data.Contexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,6 +39,9 @@ namespace NerdStore.MVC
             services.AddDbContext<CatalogoContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddDbContext<VendasContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -46,6 +50,7 @@ namespace NerdStore.MVC
             services.AddControllersWithViews();
 
             services.AddAutoMapper(typeof(DomainToDtoMappingProfile), typeof(DtoToDomainMappingProfile));
+
             services.AddMediatR(typeof(Startup));
 
             // DependencyInjection

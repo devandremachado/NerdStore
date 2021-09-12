@@ -8,9 +8,9 @@ namespace NerdStore.MVC.Controllers.Admin
 {
     public class AdminProdutosController : Controller
     {
-        private readonly IProdutoService _produtoService;
+        private readonly IProdutoAppService _produtoService;
 
-        public AdminProdutosController(IProdutoService produtoService)
+        public AdminProdutosController(IProdutoAppService produtoService)
         {
             _produtoService = produtoService;
         }
