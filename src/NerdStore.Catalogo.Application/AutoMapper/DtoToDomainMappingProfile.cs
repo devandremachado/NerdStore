@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using NerdStore.Catalogo.Application.DTO;
 using NerdStore.Catalogo.Domain.Entities;
-using NerdStore.Modulo.Catalogo.Domain.ValueObjects;
+using NerdStore.Catalogo.Domain.ValueObjects;
 
 namespace NerdStore.Catalogo.Application.AutoMapper
 {

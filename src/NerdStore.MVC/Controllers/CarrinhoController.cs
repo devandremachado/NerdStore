@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
 using NerdStore.Catalogo.Application.Services.Interfaces;
 using NerdStore.Shared.Mediator;
+using NerdStore.Shared.Messages.CommonMessages.Notifications;
 using NerdStore.Vendas.Application.Commands;
 using System;
 using System.Threading.Tasks;
@@ -13,9 +15,9 @@ namespace NerdStore.MVC.Controllers
         private readonly IProdutoAppService _produtoAppService;
         private readonly IMediatorHandler _mediatorHandler;
 
-        public CarrinhoController(
-                IProdutoAppService produtoAppService,
-                IMediatorHandler mediatorHandler)
+        public CarrinhoController(INotificationHandler<DomainNotification> notifications,
+                                  IProdutoAppService produtoAppService,
+                                  IMediatorHandler mediatorHandler) : base(notifications, mediatorHandler)
         {
             _produtoAppService = produtoAppService;
             _mediatorHandler = mediatorHandler;
@@ -31,9 +33,10 @@ namespace NerdStore.MVC.Controllers
         public async Task<IActionResult> AdicionarItem(Guid id, int quantidade)
         {
             var produto = await _produtoAppService.ObterPorId(id);
+
             if (produto == null) return BadRequest();
 
-            if(produto.QuantidadeEstoque < quantidade)
+            if (produto.QuantidadeEstoque < quantidade)
             {
                 TempData["Erro"] = "Produto com estoque insuficiente";
                 return RedirectToAction("ProdutoDetalhe", "Vitrine", new { id });
@@ -42,9 +45,12 @@ namespace NerdStore.MVC.Controllers
             var comando = new AdicionarItemPedidoCommand(ClienteId, produto.Id, produto.Nome, quantidade, produto.Valor);
             await _mediatorHandler.EnviarComando(comando);
 
+            if (IsOperationValid())
+            {
+                return RedirectToAction("Index");
+            }
 
-
-            TempData["Erro"] = "Produto indisponível";
+            TempData["Errors"] = GetErrorsMessage();
             return RedirectToAction("ProdutoDetalhe", "Vitrine", new { id });
 
         }

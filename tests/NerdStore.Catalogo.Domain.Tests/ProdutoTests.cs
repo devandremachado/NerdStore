@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NerdStore.Modulo.Catalogo.Domain.Entites;
-using NerdStore.Modulo.Catalogo.Domain.ValueObjects;
+using NerdStore.Catalogo.Domain.Entities;
+using NerdStore.Catalogo.Domain.ValueObjects;
 using NerdStore.Shared.DomainObjects;
 using System;
 

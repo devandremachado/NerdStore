@@ -2,12 +2,10 @@
 using NerdStore.Catalogo.Data.Contexts;
 using NerdStore.Catalogo.Domain.Entities;
 using NerdStore.Catalogo.Domain.Interfaces;
-using NerdStore.Modulo.Catalogo.Domain;
 using NerdStore.Shared.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace NerdStore.Catalogo.Data.Repository

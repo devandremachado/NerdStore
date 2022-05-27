@@ -1,5 +1,5 @@
-﻿using NerdStore.Catalogo.Domain.Interfaces;
-using NerdStore.Modulo.Catalogo.Domain.Events;
+﻿using NerdStore.Catalogo.Domain.Events;
+using NerdStore.Catalogo.Domain.Interfaces;
 using NerdStore.Shared.Mediator;
 using System;
 using System.Threading.Tasks;

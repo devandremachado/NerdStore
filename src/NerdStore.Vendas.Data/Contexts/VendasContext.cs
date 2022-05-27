@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NerdStore.Shared.Bus;
 using NerdStore.Shared.Data;
 using NerdStore.Shared.Messages;
 using NerdStore.Vendas.Domain.Entities;
@@ -13,9 +12,7 @@ namespace NerdStore.Vendas.Data.Contexts
     {
 
         public VendasContext(DbContextOptions<VendasContext> options) : base(options)
-        {
-
-        }
+        { }
 
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<PedidoItem> PedidoItems { get; set; }

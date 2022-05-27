@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NerdStore.Catalogo.Domain.Entities;
-using NerdStore.Modulo.Catalogo.Domain;
 
 namespace NerdStore.Catalogo.Data.Mappings
 {
