@@ -4,7 +4,7 @@ using NerdStore.Modulo.Catalogo.Domain.ValueObjects;
 using NerdStore.Shared.DomainObjects;
 using System;
 
-namespace NerdStore.Modulo.Catalogo.Domain.Tests
+namespace NerdStore.Catalogo.Domain.Tests
 {
     [TestClass]
     public class ProdutoTests

@@ -9,4 +9,9 @@
     <PackageReference Include="MediatR" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Bus\" />
+    <Folder Include="Messages\CommonMessages\IntegrationEvents\" />
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace NerdStore.Modulo.Catalogo.Application.DTO
+namespace NerdStore.Catalogo.Application.DTO
 {
     public class CategoriaDTO
     {

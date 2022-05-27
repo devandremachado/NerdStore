@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using NerdStore.Modulo.Catalogo.Application.DTO;
-using NerdStore.Modulo.Catalogo.Application.Interfaces.Services;
-using NerdStore.Modulo.Catalogo.Domain.Entites;
-using NerdStore.Modulo.Catalogo.Domain.Interfaces;
+using NerdStore.Catalogo.Application.DTO;
+using NerdStore.Catalogo.Application.Services.Interfaces;
+using NerdStore.Catalogo.Domain.Entities;
+using NerdStore.Catalogo.Domain.Interfaces;
 using NerdStore.Shared.DomainObjects;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace NerdStore.Modulo.Catalogo.Application.Services
+namespace NerdStore.Catalogo.Application.Services
 {
     public class ProdutoAppService : IProdutoAppService
     {

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using NerdStore.Modulo.Catalogo.Data.Contexts;
+using NerdStore.Catalogo.Data.Contexts;
 
 namespace NerdStore.Modulo.Catalogo.Data.Migrations
 {

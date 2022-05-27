@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NerdStore.Modulo.Catalogo.Application.DTO;
-using NerdStore.Modulo.Catalogo.Application.Interfaces.Services;
+using NerdStore.Catalogo.Application.DTO;
+using NerdStore.Catalogo.Application.Services.Interfaces;
 using System;
 using System.Threading.Tasks;
 

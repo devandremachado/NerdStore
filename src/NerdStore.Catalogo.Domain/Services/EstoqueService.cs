@@ -1,10 +1,10 @@
-﻿using NerdStore.Modulo.Catalogo.Domain.Events;
-using NerdStore.Modulo.Catalogo.Domain.Interfaces;
-using NerdStore.Shared.Bus;
+﻿using NerdStore.Catalogo.Domain.Interfaces;
+using NerdStore.Modulo.Catalogo.Domain.Events;
+using NerdStore.Shared.Mediator;
 using System;
 using System.Threading.Tasks;
 
-namespace NerdStore.Modulo.Catalogo.Domain.Services
+namespace NerdStore.Catalogo.Domain.Services
 {
     public class EstoqueService : IEstoqueService
     {

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace NerdStore.Modulo.Catalogo.Application.DTO
+namespace NerdStore.Catalogo.Application.DTO
 {
     public class ProdutoDTO
     {
         [Key]
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage ="O Campo {0} é obrigatório")]
+        [Required(ErrorMessage = "O Campo {0} é obrigatório")]
         public Guid CategoriaId { get; set; }
 
         [Required(ErrorMessage = "O Campo {0} é obrigatório")]

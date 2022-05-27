@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NerdStore.Modulo.Catalogo.Domain.Entites;
+using NerdStore.Catalogo.Domain.Entities;
 using NerdStore.Shared.Data;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NerdStore.Modulo.Catalogo.Data.Contexts
+namespace NerdStore.Catalogo.Data.Contexts
 {
     public class CatalogoContext : DbContext, IUnitOfWork
     {
@@ -32,7 +32,7 @@ namespace NerdStore.Modulo.Catalogo.Data.Contexts
         {
             foreach (var entry in ChangeTracker.Entries().Where(entry => entry.GetType().GetProperty("DataCadastro") != null))
             {
-                if(entry.State == EntityState.Added)
+                if (entry.State == EntityState.Added)
                 {
                     entry.Property("DataCadastro").CurrentValue = DateTime.Now;
                 }

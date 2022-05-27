@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NerdStore.Modulo.Catalogo.Data.Contexts;
+using NerdStore.Catalogo.Data.Contexts;
+using NerdStore.Catalogo.Domain.Entities;
+using NerdStore.Catalogo.Domain.Interfaces;
 using NerdStore.Modulo.Catalogo.Domain;
-using NerdStore.Modulo.Catalogo.Domain.Entites;
-using NerdStore.Modulo.Catalogo.Domain.Interfaces;
 using NerdStore.Shared.Data;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NerdStore.Modulo.Catalogo.Data.Repository
+namespace NerdStore.Catalogo.Data.Repository
 {
     public class ProdutoRepository : IProdutoRepository
     {

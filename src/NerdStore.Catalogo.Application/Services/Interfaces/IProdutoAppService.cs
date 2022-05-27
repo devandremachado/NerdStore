@@ -1,9 +1,9 @@
-﻿using NerdStore.Modulo.Catalogo.Application.DTO;
+﻿using NerdStore.Catalogo.Application.DTO;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace NerdStore.Modulo.Catalogo.Application.Interfaces.Services
+namespace NerdStore.Catalogo.Application.Services.Interfaces
 {
     public interface IProdutoAppService : IDisposable
     {

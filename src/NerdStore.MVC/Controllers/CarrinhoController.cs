@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NerdStore.Modulo.Catalogo.Application.Interfaces.Services;
-using NerdStore.Shared.Bus;
+using NerdStore.Catalogo.Application.Services.Interfaces;
+using NerdStore.Shared.Mediator;
 using NerdStore.Vendas.Application.Commands;
 using System;
 using System.Threading.Tasks;

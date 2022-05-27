@@ -1,8 +1,8 @@
-﻿using NerdStore.Modulo.Catalogo.Domain.ValueObjects;
+﻿using NerdStore.Catalogo.Domain.ValueObjects;
 using NerdStore.Shared.DomainObjects;
 using System;
 
-namespace NerdStore.Modulo.Catalogo.Domain.Entites
+namespace NerdStore.Catalogo.Domain.Entities
 {
     public class Produto : Entity, IAggregateRoot
     {

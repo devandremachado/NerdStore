@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using NerdStore.Modulo.Catalogo.Application.DTO;
-using NerdStore.Modulo.Catalogo.Domain.Entites;
+using NerdStore.Catalogo.Application.DTO;
+using NerdStore.Catalogo.Domain.Entities;
 
-namespace NerdStore.Modulo.Catalogo.Application.AutoMapper
+namespace NerdStore.Catalogo.Application.AutoMapper
 {
     public class DomainToDtoMappingProfile : Profile
     {
